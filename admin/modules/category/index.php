@@ -7,11 +7,9 @@
             <?php  
             require_once __DIR__. "/../../layouts/header.php";
             ?>
- <div id="content-wrapper">
-
-      <div class="container-fluid">
-
-         <!-- Breadcrumbs-->
+<div id="content-wrapper">
+    <div class="container-fluid">
+        <!-- Breadcrumbs-->
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
                 <a href="<?php echo modules("category") ?>">Danh sách danh mục</a>
@@ -31,15 +29,16 @@
                 <?php echo $_SESSION['error']; unset($_SESSION['error']); ?>
             </div>
         <?php endif; ?>
+
         <!-- DataTables Example -->
         <div class="card mb-3">
-           <div class="card-header">
+            <div class="card-header">
                 <a href="add.php" class="btn btn-success">Thêm mới</a>
             </div>
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                         <thead>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable"  width="100%" cellspacing="0">
+                        <thead>
                             <tr>
                                 <th>STT</th>
                                 <th>Name</th>
@@ -81,15 +80,28 @@
                             </tr>
                             <?php $stt++; endforeach ?>
                         </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-        </div>
+                    </table>
 
+
+                </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
         <p class="small text-center text-muted my-5">
-          <em>More table examples coming soon...</em>
+            <em>More table examples are coming soon ...</em>
         </p>
+    </div>
+    <!-- /.container-fluid -->
+    <!-- Sticky Footer -->
+    <footer class="sticky-footer">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span></span>
+            </div>
+        </div>
+    </footer>
+</div>
+
 <?php  
    require_once __DIR__. "/../../layouts/footer.php";
     ?>

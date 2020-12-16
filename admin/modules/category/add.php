@@ -85,7 +85,7 @@
                     <!-- form-group // -->
                       <div class="form-group">
                         <label for="name" class="col-sm-3 control-label">Tên danh mục</label>
-                        <div class="col-sm-9">
+                        <div class="col-sm-4">
                          <input type="text-center" class="form-control" id="InputDanhmuc" aria-describedby="emailHelp" placeholder="Tên danh mục" name="name">
                                 <?php if(isset($error['name'])): ?>
                                 <p class="text-danger"><?php echo $error['name'] ?></p>

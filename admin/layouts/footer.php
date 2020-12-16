@@ -1,3 +1,14 @@
+                        </div>
+                <!-- /.container-fluid -->
+                <!-- Sticky Footer -->
+                <footer class="sticky-footer">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                             <span style="font-size: 20px">Shop Laptop Đây!</span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
             <!-- /.content-wrapper -->
         </div>
 
